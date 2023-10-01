@@ -23,7 +23,7 @@ while(not stop_game):
             print("Wrong answer, try again.")
             stop_game=True
         else:
-            print("Syntax error")
+            print("Syntax error. Try again")
             break
     else:
         print(a,op,b,"=",random.randint(0,99))
@@ -36,5 +36,8 @@ while(not stop_game):
         elif(ans in "no" or ans in "No" or ans in "NO"):
             print("Correct answer,next question. ")
             n+=1
+        else:
+            print("Syntax error. Try again")
+            break
             
             
